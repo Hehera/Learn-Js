@@ -36,6 +36,7 @@ function isPassing(grade) {
 
 
 
+
 function evenOrOdd(number) {
     if(number % 2 === 0) {
         return 'even'
