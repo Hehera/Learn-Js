@@ -1,0 +1,25 @@
+let i = 0 тому що використовуємо цикл while
+
+.map Якщо оголошуємо глобальний массив,то пишемо стрілочну функцію з дужками {} і вкінці пишемо  result = wordsArray.join(' '); та  return result;
+
+// function spinWords(sentence) {
+//   const wordsArray = sentence.split(" ");
+//   console.log(wordsArray);
+//   let result = "";
+
+//   wordsArray.map((str, i) => {
+//     if (str.length >= 5) {
+//       wordsArray[i] = str.split("").reverse().join('');
+//     } else {
+//       wordsArray[i] = str;
+//     }
+//     result = wordsArray.join(' ');
+//   });
+//   return result;
+// }
+// console.log(spinWords('Hey fellow warriors'));
+
+
+Якщо ми поміщаємо .map у змінну тоді дужки не потрібні 
+ const array = words.map((str)  =>  str.split("").reverse().join(""));
+  return array.join(" ");

@@ -1,0 +1,76 @@
+1.Як відсортувати масив в порядку зростання і навпаки ?  
+const arrSort = arr.sort((a, b) => a - b) //в порядку зростання,навпаки b - a
+
+Знайти суму всіх елементів 
+
+return numbers.reduce((acc, elem) => acc + elem);
+
+
+// оператор залишку від поділу (%) для циклічного повторення фраз.
+const index = (nbPetals - 1) % phrases.length;
+
+Найти унікальні значення в масиві
+ merge = [...new Set(merge)];
+
+ Як знайти найбільше число в масиві/найменше ?
+
+const Last = ages[ages.length - 1]; //найбільше після сортування
+  або
+const max = Math.max(...ages);//без сортування 
+
+ const minAge = sortedAges[0]; //найменше після сортування
+  або
+const min = Math.min(...ages);
+
+
+Як посортувати слова в порядку зростання по довжині ?
+
+ const sorted = array.sort((a, b) => a.length - b.length);
+
+Як видалити елемент посередині маисва ?
+
+  for (let i = 0; i < triplet.length; i++) {
+    if (triplet[i] !== minValue && triplet[i] !== maxValue) {
+      return i;
+    }
+  }
+  return -1;
+
+
+Як об'єднати двухвимірний масив [[3, 2, 1], [7, 9, 8], [6, 4, 5]] ?
+  return [].concat(...array);
+
+
+Як знайти суму всіх парних і не парних чисел ?
+  if (i % 2 === 0) {
+      res1 += array[i];
+    } else {
+      res2 += array[i];
+    }
+
+
+Як в з рядка в число перетворити ?["1.1", "2.2", "3.3"] => [1.1,2.2,3.3]
+
+return stringarray.map((str => parseFloat(str)))
+
+parseFloat - з рядка в число для десяткових чисел,а parseInt для звичайний чисел 1,2,3
+
+Як перевірити які числа є рядковим типом значень в масиві? ["4",1,2]
+
+ const filtered = x.filter((el) => typeof el === "string");
+
+
+ Як перевірити чи ми застосовуємо reduce до пустого масива чи ні ? - Треба добавити 0 індекс  
+ const summedOfIntegers = filteredOfIntegers.reduce((acc, ind) => acc + ind,0);
+
+Як порівняти і звірити чи співпадають числа з першого передаючого масива з другим передаючим? - За допомогою метода indexOf
+
+   for (let i = 0; i < arr.length; i++) {
+    if (mixArr.indexOf(arr[i]) === -1) {
+      return arr[i];
+    }
+  }
+  return 0;
+
+
+Що потрібно зробити,щоб цикл не виходив за межі масива? length - 1
