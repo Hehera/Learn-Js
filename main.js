@@ -10,6 +10,8 @@ function capitalize(word) {
       }
    }
    return res
+
+   
 }
 
 // console.log(capitalize('sam')) // "Sam"
