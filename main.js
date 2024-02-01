@@ -43,8 +43,8 @@ function evenOrOdd(number) {
         return 'odd'
     }
 }
-
 console.log(evenOrOdd(4));
+
 
 
 
