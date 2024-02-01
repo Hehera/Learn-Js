@@ -42,6 +42,8 @@ function evenOrOdd(number) {
 console.log(evenOrOdd(4));
 
 
+
+
 // Return confusion - Зворотна плутанина
 
 
