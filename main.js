@@ -32,11 +32,6 @@ function isPassing(grade) {
 // console.log(isPassing(11));
 
 
-
-
-
-
-
 function evenOrOdd(number) {
     if(number % 2 === 0) {
         return 'even'
@@ -45,6 +40,12 @@ function evenOrOdd(number) {
     }
 }
 console.log(evenOrOdd(4));
+
+
+// Return confusion - Зворотна плутанина
+
+
+
 
 
 
