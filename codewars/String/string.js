@@ -520,12 +520,60 @@ function buildString(...template){
 
 //   console.log(buildString('Cheese','Milk','Chocolate'));
 
+// 38 Welcome to the City
 
- function getSumGrades(grades) {
-    let res = 0
-    for(let i = 0; i < grades.length; i++) {
-            res += grades[i]
-    }
-    return res
+function sayHello( name, city, state ) {
+        return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
 }
-console.log(getSumGrades([12, 19, 10, 4, 15, 9]));
+// console.log(sayHello(['Franklin','Delano','Roosevelt'], 'Phoenix', 'Arizona'));
+
+// Hello, John Smith! Welcome to Phoenix, Arizona!
+
+// 39 String cleaning
+
+function stringClean(s){
+   let res = ''
+   const splited = s.split('')
+   const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+   for (let i = 0; i < splited.length; i++) {
+      if (!numbers.includes(splited[i])) {
+         res += splited[i]
+      }
+   }
+   return res
+}
+// console.log(stringClean("1234567890ddd"))
+
+
+// 40 Dollars and Cents
+
+function formatMoney(amount){
+    const formattedAmount = amount.toFixed(2)
+    return '0' + formattedAmount
+}
+// console.log((formatMoney(9)));
+
+
+// 41 L1: Bartender, drinks!
+function getDrinkByProfession(param) {
+    const lowerCaseParam = param.toLowerCase();
+    switch (lowerCaseParam) {
+        case "jabroni":
+            return "Patron Tequila";
+        case "school counselor":
+            return "Anything with Alcohol";
+        case "programmer":
+            return "Hipster Craft Beer";
+        case "bike gang member":
+            return "Moonshine";
+        case "politician":
+            return "Your tax dollars";
+        case "rapper":
+            return "Cristal";
+        default:
+            return "Beer";
+    }
+}
+// console.log(getDrinkByProfession("Jabroni")); 
+
+// 42 
