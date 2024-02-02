@@ -518,5 +518,14 @@ function buildString(...template){
     return `I like ${template.join(', ')}!`;
   }
 
-  console.log(buildString('Cheese','Milk','Chocolate'));
-  
+//   console.log(buildString('Cheese','Milk','Chocolate'));
+
+
+ function getSumGrades(grades) {
+    let res = 0
+    for(let i = 0; i < grades.length; i++) {
+            res += grades[i]
+    }
+    return res
+}
+console.log(getSumGrades([12, 19, 10, 4, 15, 9]));

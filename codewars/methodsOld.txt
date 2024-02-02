@@ -48,6 +48,22 @@ const evenNumbers = numbers.filter((number) => number % 2 === 0);
 
 console.log(evenNumbers); // [2, 4]
 -----------------------------------------------
+Метод find() є одним з методів масивів у JavaScript, який дозволяє знайти перший елемент у масиві,
+який задовольняє певну умову, визначену у вигляді функції зворотного виклику (callback).
+const numbers = [9, 5, 14, 3, 11];
+const firstNumberAboveTen = numbers.find(function(number) {
+    return number > 10;
+});
+console.log(firstNumberAboveTen); // 14
+----------
+The difference has to do with the return type of these 2 methods:
+The .find() method returns the first item which matches the condition that you specify. If no items were found, you will get back undefined.
+The .filter() method always returns an array. Even if it's empty.
+
+const numbers = [9, 5, 14, 3, 11];
+
+
+---------
 
 includes() визначає, чи містить масив певний елемент, повертаючи залежно від цього true чи false.
 

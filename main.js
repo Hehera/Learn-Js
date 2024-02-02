@@ -89,8 +89,20 @@ function getDropdown(countries) {
 
 
 
+function getPositiveTemperatures(temperatures) {
+    temperatures.filter((temp) => temp > 0)
+ }
+//  console.log(getPositiveTemperatures([-5, 12, 3])); // [12, 3]
 
 
+
+function getYear(years, searchYear) {
+    return years.find(function(year) {
+        return year === searchYear
+       }) 
+}
+console.log(getYear([2019, 2020, 2021], 2020)); // 2020
+console.log(getYear([2019, 2020, 2021], 1990)); // undefined
 
 
 
