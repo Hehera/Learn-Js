@@ -39,12 +39,57 @@ function evenOrOdd(number) {
         return 'odd'
     }
 }
-console.log(evenOrOdd(4));
+// console.log(evenOrOdd(4));
+
+function sumGrades(grades) {
+    let res = 0
+    grades.forEach((item)=> {
+        res += item
+    })
+    return res
+}
+// console.log(sumGrades([15, 5, 10]));
+
+
+function sumPositiveNumbers(numbers) {
+   let res = 0
+   numbers.forEach(item => {
+      if (item > 0) {
+         res += item
+      }
+   })
+   return res
+}
+
+// console.log(sumPositiveNumbers([15, -5, 10])); // 25
 
 
 
+function sumOddNumbers(numbers) {
+   let res = 0
+   numbers.forEach(item => {
+      if (item % 2 !== 0) {
+         res += item
+      }
+   })
+   return res
+}
+// console.log(sumOddNumbers([15, 5, 10]));//20
+
+function getDropdown(countries) {
+   let html = `option value="">Please select</option>`
+
+   countries.forEach(function (item) {
+      html += `<option value="${item.toLowerCase()}">${item}</option>`
+   })
+   return html
+}
 
 // Return confusion - Зворотна плутанина
+
+
+
+
 
 
 

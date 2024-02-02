@@ -456,14 +456,67 @@ function nameShuffler(str) {
 
 // 32 Exclamation marks series #1: Remove an exclamation mark from the end of string
 
-function remove (string) {
-    let res = []
-    for (let i = 0; i < string.length; i++) {
-        if(!res.includes('!')) {
-            res.push(string[i])
-        }
-    }
-    return res
-} 
-console.log(remove("Hi!"));
+function remove(string) {
+   if (string.endsWith('!')) {
+      return string.slice(0, -1)
+   }
+}
+// console.log(remove("Hi!"));
+  
+
+
+// 33 Capitalization and Mutability
+
+function capitalizeWord(word) {
+   let res = ''
+   const el1 = word[0]
+   for (let i = 0; i < word.length; i++) {
+      if (i === 0) {
+         res += word[i].toUpperCase()
+      } else {
+         res += word[i].toLowerCase()
+      }
+   }
+   return res
+}
+// console.log(capitalizeWord('QQzf'));
+
+
+// 34 The Wide-Mouthed frog!
+
+function mouthSize(animal) {
+   return animal.toLowerCase() == 'aligator' ? 'small' : 'wide'
+}
+// console.log(mouthSize('alligator'));
+
+
+// 35 Reversing Words in a String
+
+function reverse(string){
+   return string.split(' ').reverse().join(' ')
+}
+
+// console.log(reverse('This is so easy'));
+
+// 36 Multiplication table for number
+
+function multiTable(number) {
+    let res = ''
+   for (let i = 1; i <= 10; i++) {
+      const multiply = i * number
+      res += `${i} * ${number} = ${multiply}\n`
+   }
+   return res.trim()
+}
+
+// console.log(multiTable(5));
+
+
+// 37  String Templates - Bug Fixing #5
+
+function buildString(...template){
+    return `I like ${template.join(', ')}!`;
+  }
+
+  console.log(buildString('Cheese','Milk','Chocolate'));
   
