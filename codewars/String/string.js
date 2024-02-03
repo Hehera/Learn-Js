@@ -553,7 +553,6 @@ function formatMoney(amount){
 }
 // console.log((formatMoney(9)));
 
-
 // 41 L1: Bartender, drinks!
 function getDrinkByProfession(param) {
     const lowerCaseParam = param.toLowerCase();
@@ -577,6 +576,5 @@ function getDrinkByProfession(param) {
 // console.log(getDrinkByProfession("Jabroni")); 
 
 // 42 
-
 
 
