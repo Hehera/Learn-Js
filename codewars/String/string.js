@@ -578,3 +578,8 @@ function getDrinkByProfession(param) {
 // 42 
 
 
+function addOne(number) {
+    return number + 1;
+}
+console.log(addOne());//undefined + 1 = Nan 
+
