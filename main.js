@@ -68,7 +68,7 @@ function sumPositiveNumbers(numbers) {
 function sumOddNumbers(numbers) {
    let res = 0
    numbers.forEach(item => {
-      if (item % 2 !== 0) {
+      if (item % 2 !== 0) { 
          res += item
       }
    })
@@ -85,9 +85,7 @@ function getDropdown(countries) {
    return html
 }
 
-// Return confusion - Зворотна плутанина
-
-
+// Return confusion - Зворотня плутанина
 
 function getPositiveTemperatures(temperatures) {
     temperatures.filter((temp) => temp > 0)
@@ -95,15 +93,13 @@ function getPositiveTemperatures(temperatures) {
 //  console.log(getPositiveTemperatures([-5, 12, 3])); // [12, 3]
 
 
-
 function getYear(years, searchYear) {
     return years.find(function(year) {
         return year === searchYear
-       }) 
+   }) 
 }
 console.log(getYear([2019, 2020, 2021], 2020)); // 2020
 console.log(getYear([2019, 2020, 2021], 1990)); // undefined
-
 
 
 

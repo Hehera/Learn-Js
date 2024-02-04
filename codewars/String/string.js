@@ -539,11 +539,10 @@ function stringClean(s){
       if (!numbers.includes(splited[i])) {
          res += splited[i]
       }
-   }
+   } 
    return res
-}
+} 
 // console.log(stringClean("1234567890ddd"))
-
 
 // 40 Dollars and Cents
 
@@ -551,30 +550,32 @@ function formatMoney(amount){
     const formattedAmount = amount.toFixed(2)
     return '0' + formattedAmount
 }
+
 // console.log((formatMoney(9)));
 
 // 41 L1: Bartender, drinks!
 function getDrinkByProfession(param) {
-    const lowerCaseParam = param.toLowerCase();
-    switch (lowerCaseParam) {
-        case "jabroni":
-            return "Patron Tequila";
-        case "school counselor":
-            return "Anything with Alcohol";
-        case "programmer":
-            return "Hipster Craft Beer";
-        case "bike gang member":
-            return "Moonshine";
-        case "politician":
-            return "Your tax dollars";
-        case "rapper":
-            return "Cristal";
-        default:
-            return "Beer";
-    }
+   const lowerCaseParam = param.toLowerCase()
+   switch (lowerCaseParam) {
+      case 'jabroni':
+         return 'Patron Tequila'
+      case 'school counselor':
+         return 'Anything with Alcohol'
+      case 'programmer':
+         return 'Hipster Craft Beer'
+      case 'bike gang member':
+         return 'Moonshine'
+      case 'politician':
+         return 'Your tax dollars'
+      case 'rapper':
+         return 'Cristal'
+      default:
+         return 'Beer'
+   }
 }
-// console.log(getDrinkByProfession("Jabroni")); 
 
+// console.log(getDrinkByProfession("Jabroni")); 
+ 
 // 42 
 
 
