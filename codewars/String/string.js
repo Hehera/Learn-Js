@@ -605,3 +605,65 @@ const isLegal2 = (age) => age >= 18;
 // console.log(isLegal2(1, 3));
 
 
+
+// const getYear = (years, searchYear) => {
+//     return years.find(function(year) {
+//         if(year === searchYear) {
+//           return searchYear
+//         } 
+//     })
+// }
+
+const getYear = (years, searchYear) =>  years.filter(year => year === searchYear)
+
+
+// Sample usage - do not modify
+// console.log(getYear([2019, 2020, 2021], 2020)); // 2020
+
+
+
+const getMessage = (message) => {
+
+   for(let i = 0; i < message.length; i++) {
+        if(message[message.length - 1] !== '.') {
+            return message[message.length - 1] + '.'         
+        } else {
+            return message
+        }
+   }
+}
+// console.log(getMessage("Hello world")); // "Hello world."
+
+    
+const getUnit = text => {
+    if(text.includes('°C')) {
+        return "Celsius"
+    } else if(text.includes('°F')){
+        return "Fahrenheit"
+    } else {
+        return "N/A"
+    }
+ }
+//  console.log(getUnit("It is 15°F today")); // Celsius
+
+
+
+// The slug should not be more than 15 characters. When there are more than 15 characters,
+//  ignore everything after the 15th character.
+// The slug should always be in lower case.
+// Space characters should be replaced by dashes (-).
+
+ const getSlug = name => {
+        let slug= name.slice(0,15).toLowerCase()
+        slug = slug.replaceAll(' ','-')
+        return slug
+    }
+    // console.log(getSlug("Bedside lavalamp")); // "bedside-lavalam"
+    
+    // const replacedAndLowered =  name.replaceAll(' ','-').toLowerCase();
+    
+
+    const getCountTodos = todos => {
+       return todos.split(', ').length
+    }
+    console.log(getCountTodos("Laundry, Wash dishes, Clean table")); // 3

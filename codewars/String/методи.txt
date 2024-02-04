@@ -1,16 +1,23 @@
 -------
 String-
 -------
-1.split('') - з рядка в масив;
-2.to String() - перетворює тип даних в рядок,наприклад 123 => '123'
+1.split - з рядка в масив;Reminder that the opposite of String.split(separator) would be Array.join(glue).
+' ' - space(пробел)
+2.to String - перетворює тип даних в рядок,наприклад 123 => '123'
 3.  res.push(str[str.length - 1]); // - отримали останній елемент рядка
     res.push(str.length - 1); // отримали значення рядка тобто (7 - 1)= 6
 4.slice - створює новий масив(або рядок) на основі існуючого та вертає вибрану частину не змінюючи існуючого масиву(рядка)
 5.splice - змінює існуючий масив,видаляючи,заміняючи,добавляючи елементи в масив.
-6. ' ' - space(пробел)
+6. 
 7.endsWith - перевіряє останній символ(boolean)
 8.startsWith - перевіряє початковий символ(boolean)
 9.toFixed(2) - добавляє нулі до десяткових чисел.
+10.trim - removes all leading (at the beginning) and trailing (at the end) space characters.
+11.replace(search,replace) - Шукає перше search і потім замінює його replace.
+                    const message = "You are welcome.";
+                    message.replace(" ", "_"); // "You_are welcome."; (only the first occurrence has been replaced)
+                    console.log(message); // "You are welcome." (original string is not changed)
+12.replaceAll() - замінює всі search, на replace.
 -------
 Array--
 -------
@@ -26,7 +33,7 @@ Array--
                     }); // 14   якшо б не найшло було б undefined
 11.map повертає новий масив, в якому кожен елемент є результатом виклику функції для кожного елемента вихідного масиву.
 
-12.includes якщо міститься певне значення в масиві true інакше false.
+12.includes якщо міститься певне значення в масиві true інакше false.(для рядків теж використовується для пошуку підрядків)
                     const groceries = ["Apple", "Peach", "Tomato"];
                     groceries.includes("Tomato"); // true
                     groceries.includes("Bread"); // false
@@ -34,4 +41,5 @@ Array--
                     const groceries = ["Apple", "Peach", "Tomato"];
                     groceries.join("; "); // "Apple; Peach; Tomato"
                     groceries.join(" . "); // "Apple . Peach . Tomato"
-14.
+14.forEach -  ітерує по кожному елементу масиву і виконує певної дії для кожного елементу. 
+Він не повертає нового масиву, а лише виконує задану функцію зворотного виклику(колбек) для кожного елементу масиву.
