@@ -104,5 +104,3 @@ console.log(getYear([2019, 2020, 2021], 1990)); // undefined
 
 
 
-
-

@@ -582,5 +582,26 @@ function getDrinkByProfession(param) {
 function addOne(number) {
     return number + 1;
 }
-console.log(addOne());//undefined + 1 = Nan 
+// console.log(addOne());//undefined + 1 = Nan 
+
+
+// Implicit return
+
+const sum22 = (a, b) => {
+    a + b;
+}
+// console.log(sum22(1, 3));
+
+const sum2 = (a, b) => a + b;
+// console.log(sum2(1, 3));
+
+const isLegal = (age) => {
+    return age >= 18;
+}
+// console.log(isLegal(1, 3));
+
+
+const isLegal2 = (age) => age >= 18;
+// console.log(isLegal2(1, 3));
+
 
